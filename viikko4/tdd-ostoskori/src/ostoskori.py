@@ -37,8 +37,10 @@ class Ostoskori:
             del self._tuotteet_korissa[poistettava.nimi()]
 
     def tyhjenna(self):
-        pass
-        # tyhjentää ostoskorin
+        self._tuotteet_korissa = {}
+        self._ostoskori = []
+        self._maara = 0
+        self._hinta = 0
 
     def ostokset(self):
         return self._ostoskori
